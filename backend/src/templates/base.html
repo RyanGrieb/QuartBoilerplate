@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Quart Boilerplate</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}" />
+    {% block head %}{% endblock %}
+</head>
+
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+            </ul>
+        </nav>
+        {% block body %}{% endblock %}
+    </div>
+
+</body>
+
+</html>
